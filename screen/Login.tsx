@@ -22,13 +22,14 @@ export default function LoginPage() {
             password: ''
         })
         nameInput.current.blur();
+        navigation.navigate('Home');
     }
 
     function turnToRegisterPage(): void {
-        navigation.navigate('Register')
+        navigation.navigate('Register');
     }
     return (
-        <ImageBackground source={require('./images/login-page-bg(2).png')} style={{ width: '100%', height: '100%' }}>
+        <ImageBackground source={require('./images/login-page-bg(3).png')} style={{ width: '100%', height: '100%' }}>
             <ScrollView style={styles.container}>
                 <Input ref={nameInput} value={userInfo.userName} placeholder="请输入账号" leftIcon={{ type: 'antdesign', name: 'user' }}
                     onChangeText={value => changeInputValue("userName", value)} />

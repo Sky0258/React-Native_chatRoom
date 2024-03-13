@@ -29,7 +29,7 @@ export default function Register() {
     }
 
     return (
-        // <ImageBackground source={require('./images/register-bg.jpg')} style={{ width: '100%', height: '100%' }}>
+        <ImageBackground source={require('./images/regitser-page-bg.png')} style={{ width: '100%', height: '100%' }}>
         <ScrollView>
             <View>
                 <Text style={styles.title}>注册</Text>
@@ -40,7 +40,7 @@ export default function Register() {
                 <Button title="注册" color="#39b1e6" size="lg" onPress={submitRegisterForm}></Button>
             </View>
         </ScrollView>
-        // </ImageBackground>
+        </ImageBackground>
     )
 }
 

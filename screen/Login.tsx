@@ -22,7 +22,7 @@ export default function LoginPage() {
             password: ''
         })
         nameInput.current.blur();
-        navigation.navigate('Home');
+        navigation.navigate('ChatRoom');
     }
 
     function turnToRegisterPage(): void {
